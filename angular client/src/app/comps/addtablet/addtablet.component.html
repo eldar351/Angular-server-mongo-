@@ -1,0 +1,21 @@
+<h1>Add cupon</h1>
+<form [formGroup]="tabForm"> 
+  <label>
+    name:
+    <input type="text" formControlName="name">
+  </label> <br/>
+  <label>
+    phone number:
+    <input type="text" formControlName="phone">
+  </label> <br/>
+  <label>
+    number of cupon:
+    <input type="text" formControlName="cupon">
+  </label> <br/>
+  
+
+  <button  [disabled]="!this.tabForm.valid"   
+  type="submit" (click)="sendData()">add cupon</button> 
+</form>
+
+
